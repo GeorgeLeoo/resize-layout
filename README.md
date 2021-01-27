@@ -3,7 +3,7 @@
 >可拖拽拉宽改变元素宽度布局
 
 # Demo
-![](https://upload-images.jianshu.io/upload_images/5205102-bc7c19310b1131c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://github.com/GeorgeLeoo/resize-layout/blob/master/gif/demo.gif)
 
 # 使用方法
 
