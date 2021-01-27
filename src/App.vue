@@ -2,7 +2,7 @@
   <div id="app" class="test">
     <div class="box">
       <div class="header">App.vue--vue-demo</div>
-      <ResizeLayout :resizeBarThick="1">
+      <ResizeLayout :resizeBarThick="1" style="height: calc(100vh - 40px);">
         <ResizeCol width="240px">
           <div class="left">
             <ul>
@@ -34,7 +34,7 @@
                       </ul>
                     </div>
                     <div class="fl">
-                      <textarea name="" id=""></textarea>
+                      <textarea v-model="value" name="" id=""></textarea>
                     </div>
                   </div>
                 </div>
@@ -66,7 +66,8 @@ export default {
   },
   data () {
     return {
-      menu: ['ResizeLayout', 'node_modules', 'public', 'src', 'package.json']
+      menu: ['ResizeLayout', 'node_modules', 'public', 'src', 'package.json'],
+      value: '// this is code'
     }
   }
 }
@@ -75,6 +76,7 @@ export default {
 <style lang="scss" scoped>
 .test {
   user-select: none;
+  background: #1f2428;
   .clearfix::after {
     content: "";
     height: 0;
@@ -95,7 +97,7 @@ export default {
     }
     .left {
       background: #1f2428;
-      height: 100vh;
+      height: calc(100vh - 40px);
       color: #d1d5da;
       padding: 10px;
       border-right: 1px solid #1b1f23;
@@ -104,7 +106,7 @@ export default {
       }
     }
     .right {
-      height: 100vh;
+      height: calc(100vh - 40px);
       .top-main {
         position: sticky;
         top: 0;
@@ -152,8 +154,10 @@ export default {
             background: transparent;
             border: none;
             outline: none;
-            padding: 15px;
+            padding: 0 15px;
             color: #fff;
+            resize: none;
+            line-height: 26px;
           }
 
           .line-number {
