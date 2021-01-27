@@ -3,7 +3,7 @@
 >可拖拽拉宽改变元素宽度布局
 
 # Demo
-![](https://github.com/GeorgeLeoo/resize-layout/blob/master/gif/demo.gif)
+[在线实例地址：https://georgeleoo.github.io/resize-layout/](https://georgeleoo.github.io/resize-layout/)
 
 # 使用方法
 
